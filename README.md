@@ -15,6 +15,9 @@
    - Converts to a Fear & Greed Index (0-100) and labels (Fear/Neutral/Greed) grouped in 2-minute buckets for charting.
 4) **UI/dashboard** – `app/dashboard/page.tsx` renders `FearGreedDashboard`, showing the index, charts, stats, and latest tweets (components under `components/`).
 
+## Sentiment model (Hugging Face)
+- The sentiment API uses a fine-tuned BERTweet model for Bitcoin tweets: [rohan10juli/bertweet-finetuned-bitcoin](https://huggingface.co/rohan10juli/bertweet-finetuned-bitcoin). It outputs binary labels (0 = negative, 1 = positive) that power the Fear & Greed Index.
+
 ## Home Dashboard – Real-Time Bitcoin Market Overview
 Displays Bitcoin price, 24-hour percentage change, and trading volume fetched from CoinGecko API.
 
