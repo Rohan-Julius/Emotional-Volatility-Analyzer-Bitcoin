@@ -28,3 +28,11 @@ Continue building your app on:
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
+
+## Local development
+
+- Prereqs: Node 18+ (Next.js 16), pnpm or npm installed.
+- Install deps (pick one): `pnpm install` or `npm install`
+- Run dev server: `pnpm dev` (or `npm run dev`) then open http://localhost:3000
+- Build: `pnpm build` (or `npm run build`) and start with `pnpm start`
+- Lint: `pnpm lint` (or `npm run lint`)
