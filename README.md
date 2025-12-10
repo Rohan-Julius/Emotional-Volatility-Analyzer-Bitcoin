@@ -15,6 +15,21 @@
    - Converts to a Fear & Greed Index (0-100) and labels (Fear/Neutral/Greed) grouped in 2-minute buckets for charting.
 4) **UI/dashboard** – `app/dashboard/page.tsx` renders `FearGreedDashboard`, showing the index, charts, stats, and latest tweets (components under `components/`).
 
+## 🏠 Home Dashboard – Real-Time Bitcoin Market Overview
+Displays Bitcoin price, 24-hour percentage change, and trading volume fetched from CoinGecko API.
+
+<img width="1580" height="847" alt="Screenshot 2025-12-10 at 6 28 12 PM" src="https://github.com/user-attachments/assets/a89d7b67-49f9-4f29-92f2-6c1870d46b7f" />
+
+## 💭 Sentiment Dashboard – Live Greed–Fear Index Visualization
+Shows the real-time Greed–Fear Index updated every 5 minutes based on sentiment analysis from fine-tuned BERTweet.
+
+<img width="1580" height="847" alt="Screenshot 2025-12-10 at 6 33 19 PM" src="https://github.com/user-attachments/assets/4492cd71-1a8c-4c90-bc8f-dd6d6dde08d5" />
+
+## 📊 Analytics Dashboard – Tweet Insights and Engagement Metrics
+Presents total tweets analyzed, latest sample tweets, sentiment labels, and engagement rates extracted from Rettiwt API.
+
+<img width="1580" height="847" alt="Screenshot 2025-12-10 at 6 34 32 PM" src="https://github.com/user-attachments/assets/c4845536-0e12-4001-838d-18da3020f340" />
+
 ## Running everything locally
 - **Prereqs**: Node 18+, pnpm or npm; Python 3.10+ with PyTorch/transformers (see `requirements.txt` and `sentiment_api.py`).
 - **Install deps**: `pnpm install` (or `npm install`).
